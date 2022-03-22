@@ -1,0 +1,64 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>f97566d8-feaa-4a22-994a-a9b6db61356d</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>TimeSeriesSplit.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>StratifiedTrainTestSplits</Name>
+    <RootNamespace>StratifiedTrainTestSplits</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="GroupKFold.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LeaveOneOut.py" />
+    <Compile Include="LeavePOut.py" />
+    <Compile Include="LeavePOutPlot.py" />
+    <Compile Include="LeaveOneOutPlot.py" />
+    <Compile Include="Old\GroupKFold.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Old\plot_cv_indices.py" />
+    <Compile Include="RepeatedKFold.py" />
+    <Compile Include="ShuffledSplit.py" />
+    <Compile Include="ShuffledSplitPlot.py" />
+    <Compile Include="KFold.py" />
+    <Compile Include="StratifiedKFold.py" />
+    <Compile Include="Old\StratifiedKFold.py" />
+    <Compile Include="RepeatedKFoldPlot.py" />
+    <Compile Include="TimeSeriesSplit.py">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Datasets\" />
+    <Folder Include="Old\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Datasets\sunspots.csv" />
+    <Content Include="Datasets\titanic.csv" />
+    <Content Include="requirements.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>

@@ -1,0 +1,156 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>fbcb05de-e742-4897-ad09-b8caccf32868</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>Train_SVR_RandomizedSearchCV.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>HyperParameterUsingGridSearchCV</Name>
+    <RootNamespace>HyperParameterUsingGridSearchCV</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="pyimagesearch\localbinarypatterns.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Train_SVR.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="HyperParameterUsingGridSearchCV.py" />
+    <Compile Include="pyimagesearch\config.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Train_SVR_GridSearchCV.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Train_SVR_RandomizedSearchCV.py">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Datasets\" />
+    <Folder Include="texture_dataset\" />
+    <Folder Include="texture_dataset\brick\" />
+    <Folder Include="texture_dataset\Marble\" />
+    <Folder Include="texture_dataset\Sand\" />
+    <Folder Include="pyimagesearch\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Datasets\abalone.data" />
+    <Content Include="Datasets\abalone.names" />
+    <Content Include="requirements.txt" />
+    <Content Include="texture_dataset\brick\00000000.jpg" />
+    <Content Include="texture_dataset\brick\00000001.jpg" />
+    <Content Include="texture_dataset\brick\00000002.jpg" />
+    <Content Include="texture_dataset\brick\00000003.jpg" />
+    <Content Include="texture_dataset\brick\00000004.jpg" />
+    <Content Include="texture_dataset\brick\00000005.jpg" />
+    <Content Include="texture_dataset\brick\00000006.jpg" />
+    <Content Include="texture_dataset\brick\00000007.jpg" />
+    <Content Include="texture_dataset\brick\00000008.jpg" />
+    <Content Include="texture_dataset\brick\00000009.jpg" />
+    <Content Include="texture_dataset\brick\00000010.jpg" />
+    <Content Include="texture_dataset\brick\00000011.jpg" />
+    <Content Include="texture_dataset\brick\00000012.jpg" />
+    <Content Include="texture_dataset\brick\00000013.jpg" />
+    <Content Include="texture_dataset\brick\00000014.jpg" />
+    <Content Include="texture_dataset\brick\00000015.jpg" />
+    <Content Include="texture_dataset\brick\00000016.jpg" />
+    <Content Include="texture_dataset\brick\00000017.jpg" />
+    <Content Include="texture_dataset\brick\00000018.jpg" />
+    <Content Include="texture_dataset\brick\00000019.jpg" />
+    <Content Include="texture_dataset\brick\00000020.jpg" />
+    <Content Include="texture_dataset\brick\00000021.jpg" />
+    <Content Include="texture_dataset\brick\00000022.jpg" />
+    <Content Include="texture_dataset\brick\00000023.jpg" />
+    <Content Include="texture_dataset\brick\00000024.jpg" />
+    <Content Include="texture_dataset\brick\00000025.jpg" />
+    <Content Include="texture_dataset\brick\00000026.jpg" />
+    <Content Include="texture_dataset\brick\00000027.jpg" />
+    <Content Include="texture_dataset\brick\00000028.jpg" />
+    <Content Include="texture_dataset\brick\00000029.jpg" />
+    <Content Include="texture_dataset\brick\00000030.jpg" />
+    <Content Include="texture_dataset\Marble\00000000.jpg" />
+    <Content Include="texture_dataset\Marble\00000001.jpg" />
+    <Content Include="texture_dataset\Marble\00000002.jpg" />
+    <Content Include="texture_dataset\Marble\00000003.jpg" />
+    <Content Include="texture_dataset\Marble\00000004.jpg" />
+    <Content Include="texture_dataset\Marble\00000005.jpg" />
+    <Content Include="texture_dataset\Marble\00000006.jpg" />
+    <Content Include="texture_dataset\Marble\00000007.jpg" />
+    <Content Include="texture_dataset\Marble\00000008.jpg" />
+    <Content Include="texture_dataset\Marble\00000009.jpg" />
+    <Content Include="texture_dataset\Marble\00000010.jpg" />
+    <Content Include="texture_dataset\Marble\00000011.jpg" />
+    <Content Include="texture_dataset\Marble\00000012.jpg" />
+    <Content Include="texture_dataset\Marble\00000013.jpg" />
+    <Content Include="texture_dataset\Marble\00000014.jpg" />
+    <Content Include="texture_dataset\Marble\00000015.jpg" />
+    <Content Include="texture_dataset\Marble\00000016.jpg" />
+    <Content Include="texture_dataset\Marble\00000017.jpg" />
+    <Content Include="texture_dataset\Marble\00000018.jpg" />
+    <Content Include="texture_dataset\Marble\00000019.jpg" />
+    <Content Include="texture_dataset\Marble\00000020.jpg" />
+    <Content Include="texture_dataset\Marble\00000021.jpg" />
+    <Content Include="texture_dataset\Marble\00000022.jpg" />
+    <Content Include="texture_dataset\Marble\00000023.jpg" />
+    <Content Include="texture_dataset\Marble\00000024.jpg" />
+    <Content Include="texture_dataset\Marble\00000025.jpg" />
+    <Content Include="texture_dataset\Marble\00000026.jpg" />
+    <Content Include="texture_dataset\Marble\00000027.jpg" />
+    <Content Include="texture_dataset\Marble\00000028.jpg" />
+    <Content Include="texture_dataset\Marble\00000029.jpg" />
+    <Content Include="texture_dataset\Marble\00000030.jpg" />
+    <Content Include="texture_dataset\Sand\00000000.jpg" />
+    <Content Include="texture_dataset\Sand\00000001.jpg" />
+    <Content Include="texture_dataset\Sand\00000002.jpg" />
+    <Content Include="texture_dataset\Sand\00000003.jpg" />
+    <Content Include="texture_dataset\Sand\00000004.jpg" />
+    <Content Include="texture_dataset\Sand\00000005.jpg" />
+    <Content Include="texture_dataset\Sand\00000006.jpg" />
+    <Content Include="texture_dataset\Sand\00000007.jpg" />
+    <Content Include="texture_dataset\Sand\00000008.jpg" />
+    <Content Include="texture_dataset\Sand\00000009.jpg" />
+    <Content Include="texture_dataset\Sand\00000010.jpg" />
+    <Content Include="texture_dataset\Sand\00000011.jpg" />
+    <Content Include="texture_dataset\Sand\00000012.jpg" />
+    <Content Include="texture_dataset\Sand\00000013.jpg" />
+    <Content Include="texture_dataset\Sand\00000014.jpg" />
+    <Content Include="texture_dataset\Sand\00000015.jpg" />
+    <Content Include="texture_dataset\Sand\00000016.jpg" />
+    <Content Include="texture_dataset\Sand\00000017.jpg" />
+    <Content Include="texture_dataset\Sand\00000018.jpg" />
+    <Content Include="texture_dataset\Sand\00000019.jpg" />
+    <Content Include="texture_dataset\Sand\00000020.jpg" />
+    <Content Include="texture_dataset\Sand\00000021.jpg" />
+    <Content Include="texture_dataset\Sand\00000022.jpg" />
+    <Content Include="texture_dataset\Sand\00000023.jpg" />
+    <Content Include="texture_dataset\Sand\00000024.jpg" />
+    <Content Include="texture_dataset\Sand\00000025.jpg" />
+    <Content Include="texture_dataset\Sand\00000026.jpg" />
+    <Content Include="texture_dataset\Sand\00000027.jpg" />
+    <Content Include="texture_dataset\Sand\00000028.jpg" />
+    <Content Include="texture_dataset\Sand\00000029.jpg" />
+    <Content Include="texture_dataset\Sand\00000030.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>

@@ -1,0 +1,8 @@
+cake	60
+cake	60
+joice	 80
+milk	 70
+warer	60
+milk	110
+cake	60
+oolong	50
